@@ -1,4 +1,4 @@
-# Css-FlexGrid
+# CssGrid
 
 ### Project description
 
