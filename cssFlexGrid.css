@@ -1,21 +1,28 @@
+* { 
+    padding: 0; 
+    margin: 0;
+}
+
 html, 
 body, 
-.mainDiv {
+.bodyDiv {
     height: 100%;
 }
 
-.mainDiv {
+/* first version of creating a grid */
+.bodyDiv {
     display: grid;    
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 10% 82% 8%;
+    text-align: center;
+    font-size: 160%;
   }
 
 header {
     grid-column: span 12;
     display: flex; 
     justify-content: space-between;   
-    background-color: tomato;
-    font-size: 160%;
+    background-color: tomato;  
     padding: 0 1%;
 }
 
@@ -32,4 +39,34 @@ main {
 footer {
     grid-column: span 12;
     background-color: orange;
+}
+
+/* second version of creating a grid */
+.mainItem1 { grid-area: top; }
+.mainItem2 { grid-area: side; }
+.mainItem3 { grid-area: main; }
+.mainItem4 { grid-area: right; }
+.mainItem5 { grid-area: footer; }
+
+.mainDiv {
+    height: 97%;
+    display: grid;
+    grid-template-areas:
+        'side top top top top top top top top top top top'
+        'side main main main main main main main main main main right'
+        'side main main main main main main main main main main right'
+        'side main main main main main main main main main main right'
+        'side main main main main main main main main main main right'
+        'side main main main main main main main main main main right'
+        'side main main main main main main main main main main right'
+        'side main main main main main main main main main main right'
+        'side main main main main main main main main main main right'
+        'side footer footer footer footer footer footer footer footer footer footer footer';
+    grid-gap: 1.2%;
+    padding: 1.2%;
+}
+.mainDiv > div {
+    background-color: rgba(255, 255, 255, 0.603);
+    text-align: center;
+    padding: 2% 0;
 }
