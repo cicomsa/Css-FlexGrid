@@ -1,0 +1,12 @@
+header {
+    display: flex; 
+    justify-content: space-between;   
+}
+
+/* header > div:nth-child(3) {
+    margin-left: auto;
+} */
+
+.headerDiv {
+    margin: 10px 5px;
+}
