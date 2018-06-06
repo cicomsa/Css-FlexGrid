@@ -49,7 +49,7 @@ footer {
 .mainItem5 { grid-area: footer; }
 
 .mainDiv {
-    height: 97%;
+    height: 96%;
     display: grid;
     grid-template-areas:
         'side top top top top top top top top top top top'
