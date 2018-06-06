@@ -1,12 +1,35 @@
-header {
-    display: flex; 
-    justify-content: space-between;   
+html, 
+body, 
+.mainDiv {
+    height: 100%;
 }
 
-/* header > div:nth-child(3) {
-    margin-left: auto;
-} */
+.mainDiv {
+    display: grid;    
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 10% 82% 8%;
+  }
 
-.headerDiv {
-    margin: 10px 5px;
+header {
+    grid-column: span 12;
+    display: flex; 
+    justify-content: space-between;   
+    background-color: tomato;
+    font-size: 160%;
+    padding: 0 1%;
+}
+
+aside {
+    grid-column: span 2;
+    background-color:orchid;
+}
+
+main {
+    grid-column: span 10;
+    background-color: yellowgreen;
+}
+
+footer {
+    grid-column: span 12;
+    background-color: orange;
 }
